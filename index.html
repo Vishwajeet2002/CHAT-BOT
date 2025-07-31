@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwa Ai Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Chat Toggle Button -->
+    <button id="chat-toggle" class="chat-toggle">
+      <span class="chat-icon">💬</span>
+      <span class="close-icon">✕</span>
+    </button>
+
+    <!-- Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+      <div class="chat-header">
+        <h3>AI Assistant</h3>
+        <span class="status-indicator">●</span>
+      </div>
+
+      <div class="chat-messages" id="chat-messages">
+        <div class="message bot-message">
+          <div class="message-content">Hi! 👋 How can I help you today?</div>
+          <div class="quick-actions">
+            <button
+              class="quick-btn"
+              data-message="What services do you offer?"
+            >
+              Services
+            </button>
+            <button class="quick-btn" data-message="How can I contact support?">
+              Contact
+            </button>
+            <button class="quick-btn" data-message="What are your hours?">
+              Hours
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input-container">
+        <input type="text" id="chat-input" placeholder="Type your message..." />
+        <button id="send-btn">Send</button>
+      </div>
+      <div class="quick-actions">
+        <button
+          class="quick-btn"
+          data-message="Write a detailed essay about artificial intelligence"
+        >
+          📝 Write Essay
+        </button>
+        <button class="quick-btn" data-message="Draft a professional email">
+          📧 Draft Email
+        </button>
+        <button
+          class="quick-btn"
+          data-message="Create a comprehensive business plan"
+        >
+          📊 Business Plan
+        </button>
+        <button class="quick-btn" data-message="What services do you offer?">
+          Services
+        </button>
+      </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
